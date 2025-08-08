@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    word-break: break-word;
+    margin: 0;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #02A28F;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header > h1 {
+    width: 100%;
+    max-width: 1024px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conjunto {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1024px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#capa-container {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    background: url(./assets/highlight1.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 0.625em;
+    overflow: hidden;
+}
+
+.capa-item {
+    padding: 1.5rem;
+    background: #000000;
+    background-image: url(assets/cidade.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.capa-item > .post-categoria {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.capa-item > .post-titulo {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.capa-item > .post-autor {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cabecalho {
+    background-color: #02A28F;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.cabecalho > a {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+#posts-recentes > .cabecalho {
+    padding: 1rem 1.5rem;
+    margin: 0 0 1rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#lista-recente {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.cards {
+    box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.cards > img {
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.cards > .post-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.cards .post-categoria {
+    color: #02A28F;
+}
+
+.cards .post-titulo {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.cards .post-data {
+    color: #616161;
+}
+
+#posts-populares > .cabecalho {
+    margin: 0 0 1rem;
+}
+
+#lista-popular {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.itens-populares {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    align-items: flex-start;
+}
+
+.itens-populares > img {
+    width: 8.25rem;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.itens-populares .post-titulo {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+}
+
+.itens-populares .post-data {
+    font-size: 1rem;
+    color: #616161;
+}
+
+#categoria-container > .cabecalho {
+    margin: 0 0 1rem;
+}
+
+.categorias-lista {
+    padding: 0;
+}
+
+.categorias-lista > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #616161;
+}
+
+.categorias-lista > li a {
+    color: #616161;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #02A28F;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        min-width: 320px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #conjunto {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .capa-item > .post-titulo {
+        font-size: 1.5rem;
+    }
+
+    #lista-recente {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #posts-recentes > .cabecalho {
+        padding: 0.5rem 1rem;
+        margin: 0 0 1rem;
+    }
+
+    #posts-populares > .cabecalho,
+    #categoria-container > .cabecalho {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
